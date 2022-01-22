@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+    "name": "Keyboard & Mouse Lock",
+    "version": "1.0",
+    "description": "A macro to lock the keyboard and mouse for a given tab to prevent tampering",
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "index.js"
+            ],
+            "css": [
+                "styles.css"
+            ]
+        }
+    ],
+    "icons": {
+        "16": "icon/16.png",
+        "48": "icon/48.png",
+        "96": "icon/96.png",
+        "128": "icon/128.png"
+    }
+}
